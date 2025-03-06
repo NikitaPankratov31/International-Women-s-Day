@@ -1,0 +1,918 @@
+/* line 1, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 21, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 25, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/reset.scss */
+html {
+  height: 100%;
+}
+
+/* line 28, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 31, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 34, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 37, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 42, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Barriecito";
+  src: url(../fonts/Barriecito-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url(../fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url(../fonts/NotoSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url(../fonts/NotoSans-Medium.ttf);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.01);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* line 39, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 56, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.barriecito-title {
+  font-family: "Barriecito";
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+/* line 61, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.comfortaa-title {
+  font-family: "Comfortaa";
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+/* line 66, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.montserrat-title {
+  font-family: "Montserrat";
+  font-size: 36px;
+  color: #000000;
+}
+
+/* line 71, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.notosans-title {
+  font-family: "NotoSans-Regular";
+  font-size: 32px;
+  color: #000000;
+}
+
+/* line 76, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.notosans-paragraph {
+  font-family: "NotoSans-Light";
+  font-size: 18px;
+  color: #000000;
+}
+
+/* line 81, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.notosansMedium-paragraph {
+  font-family: "NotoSans-Medium";
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+/* line 87, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.color_red {
+  color: #EC7865;
+}
+
+/* line 90, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.color_black {
+  color: #000000;
+}
+
+/* line 93, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* line 97, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.line {
+  transform: rotate(90deg);
+  width: 300px;
+  border-top: 2px solid white;
+}
+
+/* line 102, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.black_line {
+  border-top: 2px solid black;
+}
+
+/* line 105, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.hidden {
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+/* line 109, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.smooth_elem {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* line 115, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section {
+  min-height: 800px;
+  background: linear-gradient(225deg, #f4afb2 0%, #f4afb2 6.67%, #f4afb2 13.33%, #f5aeb2 20%, #f6aeb2 26.67%, #f7adb2 33.33%, #f8acb3 40%, #f9abb3 46.67%, #faabb3 53.33%, #fbaab3 60%, #fca9b4 66.67%, #fda8b4 73.33%, #fea8b4 80%, #ffa7b4 86.67%, #ffa7b4 93.33%, #ffa7b4 100%);
+  overflow: hidden;
+}
+
+/* line 119, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__content-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* line 123, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__right-border {
+  display: flex;
+}
+
+/* line 125, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__first-title {
+  display: flex;
+  border: 2px solid white;
+  height: 114px;
+  width: 310px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 132, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__second-title {
+  display: flex;
+  border: 2px solid white;
+  border-left: 0px;
+  height: 114px;
+  width: 104px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 140, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__third-title {
+  margin-bottom: 25px;
+  transform: translateX(20px);
+}
+
+/* line 143, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__fourth-title {
+  transform: translateX(20px);
+}
+
+/* line 145, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__left-wrapper {
+  padding-top: 5px;
+  margin-right: 33px;
+}
+
+/* line 148, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__left-img {
+  width: 621px;
+}
+
+/* line 150, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__right-wrapper {
+  position: relative;
+  padding-top: 40px;
+}
+
+/* line 153, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__right-border {
+  margin-bottom: 125px;
+}
+
+/* line 155, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__right-text {
+  margin-bottom: 80px;
+}
+
+/* line 157, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__right-line {
+  position: absolute;
+  top: 369px;
+  left: -149px;
+}
+
+/* line 161, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.first-section__right-img {
+  right: 0px;
+  position: absolute;
+  width: 360px;
+}
+
+/* line 168, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.text-section {
+  min-height: 100px;
+  background: #FFF4F0;
+  border: 2px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: 50px;
+  transition: transform 1.5s, opacity 1.5s;
+}
+
+/* line 176, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.text-section_background-pink {
+  background: #FFA7B4;
+}
+
+/* line 179, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.text-section__title {
+  font-size: 58px;
+}
+
+/* line 181, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.text-section__text-container {
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 189, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section {
+  min-height: 600px;
+  transition: transform 1.5s, opacity 1.5s;
+}
+
+/* line 192, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__content-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+/* line 196, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__left-wrapper {
+  position: relative;
+  margin-right: 130px;
+}
+
+/* line 199, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__right-wrapper {
+  padding-top: 140px;
+  position: relative;
+}
+
+/* line 202, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__first-title {
+  margin-bottom: 40px;
+}
+
+/* line 204, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__second-title {
+  margin-bottom: 40px;
+}
+
+/* line 206, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__third-title {
+  margin-bottom: 40px;
+}
+
+/* line 208, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__text-item {
+  width: 548px;
+  opacity: 0;
+  line-height: 1.5;
+}
+
+/* line 213, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__right-card {
+  width: 370px;
+  height: 358px;
+  background: #FFF4F0;
+  border: 1px solid black;
+  box-shadow: 10px 10px 0 0 rgba(215, 118, 138, 0.5);
+  opacity: 0;
+}
+
+/* line 220, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__right-img {
+  position: absolute;
+  top: 0px;
+  right: -60px;
+}
+
+/* line 224, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__first-star {
+  position: absolute;
+  top: 456px;
+}
+
+/* line 227, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__second-star {
+  position: absolute;
+  top: 160px;
+  left: 550px;
+}
+
+/* line 231, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__first-line {
+  position: absolute;
+  width: 252px;
+  left: 468px;
+  top: 371px;
+}
+
+/* line 236, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.second-section__second-line {
+  position: absolute;
+  width: 506px;
+  left: 89px;
+  top: 496px;
+  transform: rotate(0deg);
+}
+
+/* line 243, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.dropdown-menu {
+  font-size: 32px;
+  border: 1px solid black;
+  background: #FFF4F0;
+  width: 180px;
+  appearance: none;
+  padding: 10px 0px 10px 0px;
+  font: inherit;
+  transition-duration: 0.6s;
+}
+
+/* line 252, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.dropdown-menu:focus {
+  outline: none;
+}
+
+/* line 254, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.dropdown-menu:hover {
+  cursor: pointer;
+  background: #D7768A;
+  color: white;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 259, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.dropdown-menu__elem {
+  text-align: center;
+}
+
+/* line 262, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.lotos_img {
+  width: 477px;
+}
+
+/* line 264, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.lilia_img {
+  width: 550px;
+  top: -20px;
+}
+
+/* line 268, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.pansies_img {
+  width: 400px;
+  left: -30px;
+}
+
+/* line 272, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.buttercup_img {
+  width: 300px;
+  left: 30px;
+}
+
+/* line 276, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.camelia_img {
+  width: 360px;
+  left: 5px;
+  top: -50px;
+}
+
+/* line 281, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.show_elem {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* line 287, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section {
+  min-height: 1150px;
+  background: linear-gradient(135deg, #fff4f0 0%, #fff4f0 6.67%, #fff4f0 13.33%, #fff4f1 20%, #fff3f1 26.67%, #fff3f2 33.33%, #fff2f2 40%, #fff2f3 46.67%, #fff1f4 53.33%, #fff1f5 60%, #fff0f5 66.67%, #fff0f6 73.33%, #ffeff6 80%, #ffeff7 86.67%, #ffeff7 93.33%, #ffeff7 100%);
+  padding-top: 50px;
+  transition: transform 1.5s, opacity 1.5s;
+}
+
+/* line 292, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* line 296, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__cards-item {
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 299, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__cards-item:last-child {
+  margin-right: 0px;
+}
+
+/* line 301, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__title {
+  margin-bottom: 50px;
+}
+
+/* line 303, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__content-container {
+  position: relative;
+}
+
+/* line 305, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__first-tape {
+  position: absolute;
+  top: 58px;
+  left: 64px;
+}
+
+/* line 309, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__second-tape {
+  position: absolute;
+  top: -10px;
+  right: 42px;
+}
+
+/* line 313, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__third-tape {
+  position: absolute;
+  top: 350px;
+  left: -10px;
+}
+
+/* line 317, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.third-section__fourth-tape {
+  position: absolute;
+  top: 500px;
+  right: 0px;
+}
+
+/* line 322, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card {
+  width: 358px;
+  height: 460px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+  border: 1px solid #D7768A;
+}
+
+/* line 329, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* line 332, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card__img {
+  padding-top: 30px;
+  width: 280px;
+  height: 290px;
+  margin-bottom: 15px;
+}
+
+/* line 337, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card__img_journey-width {
+  width: 356px;
+}
+
+/* line 339, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card__img_genius-width {
+  width: 356px;
+}
+
+/* line 341, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 349, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card__content_back {
+  background: #FFF4F0;
+  transform: rotateY(180deg);
+}
+
+/* line 352, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card__content_front {
+  justify-content: center;
+}
+
+/* line 354, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card_toggle {
+  transform: rotateY(180deg);
+}
+
+/* line 356, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card__description {
+  width: 310px;
+}
+
+/* line 358, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.card__title {
+  text-align: center;
+}
+
+/* line 362, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fourth-section {
+  min-height: 970px;
+  margin-bottom: 50px;
+  transition: transform 1.5s, opacity 1.5s;
+}
+
+/* line 366, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fourth-section__title {
+  padding-top: 50px;
+}
+
+/* line 368, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fourth-section__compliment-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* line 372, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fourth-section__sun-img {
+  width: 994px;
+  animation: glow 2s infinite alternate ease-in-out;
+}
+
+/* line 375, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fourth-section__first-cloud {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+
+/* line 379, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fourth-section__second-cloud {
+  position: absolute;
+  top: 260px;
+  left: 0px;
+}
+
+/* line 383, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fourth-section__third-cloud {
+  position: absolute;
+  top: 420px;
+  right: 0px;
+}
+
+/* line 387, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fourth-section__fourth-cloud {
+  position: absolute;
+  left: 0px;
+  top: 580px;
+}
+
+/* line 392, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.cloud {
+  z-index: -1;
+  animation: shake 5s ease-in-out infinite;
+}
+
+/* line 397, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fifth-section {
+  min-height: 1210px;
+  margin-bottom: 40px;
+  transition: transform 1.5s, opacity 1.5s;
+}
+
+/* line 401, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fifth-section__title {
+  margin-bottom: 50px;
+}
+
+/* line 403, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.fifth-section__radio-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* line 409, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__question {
+  width: 550px;
+}
+
+/* line 411, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__title {
+  font-family: "NotoSans-Regular";
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* line 415, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* line 419, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__label {
+  margin-bottom: 25px;
+  font-family: "NotoSans-Light";
+  font-size: 16px;
+}
+
+/* line 423, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__label:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* line 426, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__result {
+  width: 700px;
+  font-family: "NotoSans-Medium";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 431, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__span {
+  color: #EC7865;
+}
+
+/* line 433, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 438, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.radio__answer:checked {
+  accent-color: #EC7865;
+}
+
+/* line 441, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.btn {
+  font-family: "NotoSans-Regular";
+  font-size: 26px;
+  width: 400px;
+  height: 100px;
+  margin-right: 45px;
+  color: #EC7865;
+  background: #FFF4F0;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0 0 rgba(215, 118, 138, 0.5);
+  transition-duration: 0.6s;
+}
+
+/* line 452, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* line 457, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section {
+  min-height: 900px;
+  background: linear-gradient(225deg, #f4afb2 0%, #f4afb2 6.67%, #f4afb2 13.33%, #f5aeb2 20%, #f6aeb2 26.67%, #f7adb2 33.33%, #f8acb3 40%, #f9abb3 46.67%, #faabb3 53.33%, #fbaab3 60%, #fca9b4 66.67%, #fda8b4 73.33%, #fea8b4 80%, #ffa7b4 86.67%, #ffa7b4 93.33%, #ffa7b4 100%);
+  transition: transform 1.5s, opacity 1.5s;
+}
+
+/* line 461, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section__content-container {
+  position: relative;
+}
+
+/* line 463, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section__title {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* line 466, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section__predict-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+/* line 470, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section__description {
+  width: 700px;
+  height: 100px;
+  font-family: "NotoSans-Regular";
+  font-size: 22px;
+  line-height: 1.5;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+/* line 480, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section__first-cross {
+  position: absolute;
+  top: 271px;
+}
+
+/* line 483, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section__first-star {
+  position: absolute;
+  top: 271px;
+  right: 0px;
+}
+
+/* line 487, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section__second-cross {
+  position: absolute;
+  right: 0px;
+  top: 727px;
+}
+
+/* line 491, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.sixth-section__second-star {
+  position: absolute;
+  top: 754px;
+}
+
+/* line 496, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.taro-card__first-taro {
+  position: absolute;
+  top: 330px;
+  left: 0px;
+}
+
+/* line 500, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.taro-card__second-taro {
+  position: absolute;
+  left: 155px;
+  top: 300px;
+}
+
+/* line 504, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.taro-card__third-taro {
+  position: absolute;
+  left: 350px;
+  top: 290px;
+}
+
+/* line 508, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.taro-card__fourth-taro {
+  position: absolute;
+  top: 290px;
+  right: 370px;
+}
+
+/* line 512, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.taro-card__fifth-taro {
+  position: absolute;
+  top: 300px;
+  right: 170px;
+}
+
+/* line 516, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.taro-card__sixth-taro {
+  position: absolute;
+  top: 330px;
+  right: 0px;
+}
+
+/* line 521, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.description_show {
+  background: white;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 529, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.seventh-section {
+  min-height: 750px;
+  transition: transform 1.5s, opacity 1.5s;
+}
+
+/* line 532, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.seventh-section__qr-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 535, ../../Users/nikit/OneDrive/Desktop/Women's Day Site/src/sass/style.sass */
+.seventh-section__title {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
