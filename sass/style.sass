@@ -1,0 +1,538 @@
+@import "reset.scss"
+
+@font-face
+	font-family: "Barriecito"
+	src: url(../fonts/Barriecito-Regular.ttf)
+
+@font-face
+	font-family: "Comfortaa"
+	src: url(../fonts/Comfortaa-Regular.ttf)
+
+@font-face
+	font-family: "Montserrat"
+	src: url(../fonts/Montserrat-SemiBold.ttf)
+
+@font-face
+	font-family: "NotoSans-Regular"
+	src: url(../fonts/NotoSans-Regular.ttf)
+
+@font-face
+	font-family: "NotoSans-Light"
+	src: url(../fonts/NotoSans-Light.ttf)
+
+@font-face
+	font-family: "NotoSans-Medium"
+	src: url(../fonts/NotoSans-Medium.ttf)
+
+@keyframes shake
+  0% { transform: translateX(0) }
+  25% { transform: translateX(-10px) }
+  50% { transform: translateX(10px) }
+  75% { transform: translateX(-10px) }
+  100% { transform: translateX(0) }
+
+@keyframes glow
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.01); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+
+*
+	box-sizing: border-box
+
+// Бежевый градиент
+$colorBeigeGradient: linear-gradient(135deg, #fff4f0 0%, #fff4f0 6.67%, #fff4f0 13.33%, #fff4f1 20%, #fff3f1 26.67%, #fff3f2 33.33%, #fff2f2 40%, #fff2f3 46.67%, #fff1f4 53.33%, #fff1f5 60%, #fff0f5 66.67%, #fff0f6 73.33%, #ffeff6 80%, #ffeff7 86.67%, #ffeff7 93.33%, #ffeff7 100%)
+
+// Бежевый цвет
+$colorBeige: #FFF4F0
+
+// Красный цвет
+$colorRed: #EC7865
+
+// Розовый градиент
+$colorPinkGradient: linear-gradient(225deg, #f4afb2 0%, #f4afb2 6.67%, #f4afb2 13.33%, #f5aeb2 20%, #f6aeb2 26.67%, #f7adb2 33.33%, #f8acb3 40%, #f9abb3 46.67%, #faabb3 53.33%, #fbaab3 60%, #fca9b4 66.67%, #fda8b4 73.33%, #fea8b4 80%, #ffa7b4 86.67%, #ffa7b4 93.33%, #ffa7b4 100%)
+
+// Основной контейнер, блок - заголовки и модификаторы цвета
+
+.barriecito-title
+	font-family: "Barriecito"
+	font-size: 60px
+	color: #FFFFFF
+
+.comfortaa-title
+	font-family: "Comfortaa"
+	font-size: 36px
+	color: #FFFFFF
+
+.montserrat-title
+	font-family: "Montserrat"
+	font-size: 36px
+	color: #000000
+
+.notosans-title
+	font-family: "NotoSans-Regular"
+	font-size: 32px
+	color: #000000
+
+.notosans-paragraph
+	font-family: "NotoSans-Light"
+	font-size: 18px
+	color: #000000
+
+.notosansMedium-paragraph
+	font-family: "NotoSans-Medium"
+	font-size: 18px
+	line-height: 1.5
+	color: #000000
+
+.color_red
+	color: #EC7865
+
+.color_black
+	color: #000000
+
+.container
+	max-width: 1150px
+	margin: 0 auto
+
+.line
+	transform: rotate(90deg)
+	width: 300px
+	border-top: 2px solid white
+
+.black_line
+	border-top: 2px solid black
+
+.hidden
+	opacity: 0
+	transform: translateY(150px);
+
+.smooth_elem
+	opacity: 1
+	transform: translateY(0px);
+
+// Первая секция 
+
+.first-section
+	min-height: 800px
+	background: $colorPinkGradient
+	overflow: hidden
+	&__content-container
+		display: flex
+		justify-content: center
+		flex-flow: row wrap
+	&__right-border
+		display: flex
+	&__first-title
+		display: flex
+		border: 2px solid white
+		height: 114px
+		width: 310px
+		align-items: center
+		justify-content: center
+	&__second-title
+		display: flex
+		border: 2px solid white
+		border-left: 0px
+		height: 114px
+		width: 104px
+		align-items: center
+		justify-content: center
+	&__third-title
+		margin-bottom: 25px
+		transform: translateX(20px)
+	&__fourth-title
+		transform: translateX(20px)
+	&__left-wrapper
+		padding-top: 5px
+		margin-right: 33px 
+	&__left-img
+		width: 621px
+	&__right-wrapper
+		position: relative
+		padding-top: 40px
+	&__right-border
+		margin-bottom: 125px
+	&__right-text
+		margin-bottom: 80px
+	&__right-line
+		position: absolute
+		top: 369px
+		left: -149px
+	&__right-img
+		right: 0px
+		position: absolute
+		width: 360px
+
+// Текстовая секция
+
+.text-section
+	min-height: 100px
+	background: $colorBeige
+	border: 2px solid black
+	border-left: 0px
+	border-right: 0px
+	margin-bottom: 50px
+	transition: transform 1.5s, opacity 1.5s;
+	&_background-pink
+		// transform: skewY(-5deg);
+		background: #FFA7B4
+	&__title
+		font-size: 58px
+	&__text-container
+		height: 95px
+		display: flex
+		justify-content: center
+		align-items: center
+
+// Вторая секция
+
+.second-section
+	min-height: 600px
+	transition: transform 1.5s, opacity 1.5s;
+	&__content-container
+		display: flex
+		justify-content: space-between
+		flex-flow: row wrap
+	&__left-wrapper
+		position: relative
+		margin-right: 130px
+	&__right-wrapper
+		padding-top: 140px
+		position: relative
+	&__first-title
+		margin-bottom: 40px
+	&__second-title
+		margin-bottom: 40px
+	&__third-title
+		margin-bottom: 40px
+	&__text-item
+		width: 548px
+		opacity: 0
+  &__left-paragraph
+		line-height: 1.5
+	&__right-card
+		width: 370px
+		height: 358px
+		background: $colorBeige
+		border: 1px solid black
+		box-shadow: 10px 10px 0 0 rgba(215, 118, 138, 0.5)
+		opacity: 0
+	&__right-img
+		position: absolute
+		top: 0px
+		right: -60px
+	&__first-star
+		position: absolute
+		top: 456px
+	&__second-star
+		position: absolute
+		top: 160px
+		left: 550px
+	&__first-line
+		position: absolute
+		width: 252px
+		left: 468px
+		top: 371px
+	&__second-line
+		position: absolute
+		width: 506px
+		left: 89px
+		top: 496px
+		transform: rotate(0deg)
+
+.dropdown-menu
+	font-size: 32px 
+	border: 1px solid black
+	background: $colorBeige
+	width: 180px
+	appearance: none
+	padding: 10px 0px 10px 0px 
+	font: inherit
+	transition-duration: 0.6s
+	&:focus
+		outline: none
+	&:hover
+		cursor: pointer
+		background: #D7768A
+		color: white
+		box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2)
+	&__elem
+		text-align: center
+
+.lotos_img
+	width: 477px
+.lilia_img
+	width: 550px
+	top: -20px
+	
+.pansies_img
+	width: 400px
+	left: -30px
+
+.buttercup_img
+	width: 300px
+	left: 30px
+
+.camelia_img
+	width: 360px
+	left: 5px
+	top: -50px
+
+.show_elem
+	opacity: 1
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out
+
+// Третья секция
+
+.third-section
+	min-height: 1150px
+	background: $colorBeigeGradient
+	padding-top: 50px
+	transition: transform 1.5s, opacity 1.5s;
+	&__cards-container
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+	&__cards-item
+		margin-right: 25px
+		margin-bottom: 25px
+		&:last-child
+			margin-right: 0px
+	&__title
+		margin-bottom: 50px
+	&__content-container
+		position: relative
+	&__first-tape
+		position: absolute
+		top: 58px
+		left: 64px
+	&__second-tape
+		position: absolute
+		top: -10px
+		right: 42px
+	&__third-tape
+		position: absolute
+		top: 350px
+		left: -10px
+	&__fourth-tape
+		position: absolute
+		top: 500px
+		right: 0px
+
+.card
+	width: 358px
+	height: 460px
+	position: relative
+	transform-style: preserve-3d
+	transition-duration: 0.8s
+	border: 1px solid #D7768A
+	&:hover
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5)
+		cursor: pointer
+	&__img
+		padding-top: 30px
+		width: 280px
+		height: 290px
+		margin-bottom: 15px
+		&_journey-width
+			width: 356px
+		&_genius-width
+			width: 356px
+	&__content
+		position: absolute
+		width: 100%
+		height: 100%
+		backface-visibility: hidden
+		display: flex
+		align-items: center
+		flex-direction: column
+		&_back
+			background: $colorBeige
+			transform: rotateY(180deg);
+		&_front
+			justify-content: center
+	&_toggle
+		transform: rotateY(180deg)
+	&__description
+		width: 310px
+	&__title
+		text-align: center
+
+// Четвертая секция
+.fourth-section
+	min-height: 970px
+	margin-bottom: 50px
+	transition: transform 1.5s, opacity 1.5s;
+	&__title
+		padding-top: 50px
+	&__compliment-box
+		display: flex
+		justify-content: center
+		position: relative
+	&__sun-img
+		width: 994px
+		animation: glow 2s infinite alternate ease-in-out;
+	&__first-cloud
+		position: absolute
+		top: -30px
+		right: 0px
+	&__second-cloud
+		position: absolute
+		top: 260px
+		left: 0px
+	&__third-cloud
+		position: absolute
+		top: 420px
+		right: 0px
+	&__fourth-cloud
+		position: absolute
+		left: 0px
+		top: 580px
+
+.cloud
+	z-index: -1
+	animation: shake 5s ease-in-out infinite;
+
+// Пятая секция
+.fifth-section
+	min-height: 1210px
+	margin-bottom: 40px
+	transition: transform 1.5s, opacity 1.5s;
+	&__title
+		margin-bottom: 50px
+	&__radio-content
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+
+.radio
+	&__question
+		width: 550px
+	&__title
+		font-family: "NotoSans-Regular"
+		font-size: 20px
+		margin-bottom: 25px
+	&__group
+		display: flex
+		flex-direction: column
+		margin-bottom: 20px
+	&__label
+		margin-bottom: 25px
+		font-family: "NotoSans-Light"
+		font-size: 16px
+		&:hover
+			cursor: pointer
+			font-weight: 600
+	&__result
+		width: 700px
+		font-family: "NotoSans-Medium"
+		font-size: 16px
+		line-height: 1.5
+	&__span
+		color: $colorRed
+	&__btn-box
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__answer
+		&:checked
+			accent-color: $colorRed; 
+
+.btn
+	font-family: "NotoSans-Regular"
+	font-size: 26px
+	width: 400px
+	height: 100px
+	margin-right: 45px
+	color: $colorRed
+	background: $colorBeige
+	border: 1px solid black
+	box-shadow: 5px 5px 0 0 rgba(215, 118, 138, 0.5)
+	transition-duration: 0.6s
+	&:hover
+		cursor: pointer
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5)
+
+// Шестая секция
+.sixth-section
+	min-height: 900px	
+	background: $colorPinkGradient
+	transition: transform 1.5s, opacity 1.5s;
+	&__content-container
+		position: relative
+	&__title
+		padding-top: 50px
+		margin-bottom: 50px
+	&__predict-box
+		display: flex
+		align-items: center
+		margin-bottom: 120px
+	&__description
+		width: 700px
+		height: 100px
+		font-family: "NotoSans-Regular"
+		font-size: 22px
+		line-height: 1.5
+		opacity: 0
+		display: flex
+		align-items: center
+		padding-left: 10px
+	&__first-cross
+		position: absolute
+		top: 271px
+	&__first-star
+		position: absolute
+		top: 271px
+		right: 0px
+	&__second-cross
+		position: absolute
+		right: 0px
+		top: 727px
+	&__second-star
+		position: absolute
+		top: 754px
+
+.taro-card
+	&__first-taro
+		position: absolute
+		top: 330px
+		left: 0px
+	&__second-taro
+		position: absolute
+		left: 155px
+		top: 300px
+	&__third-taro
+		position: absolute
+		left: 350px
+		top: 290px
+	&__fourth-taro
+		position: absolute
+		top: 290px
+		right: 370px
+	&__fifth-taro
+		position: absolute
+		top: 300px
+		right: 170px
+	&__sixth-taro
+		position: absolute
+		top: 330px
+		right: 0px
+
+.description_show
+	background: white
+	opacity: 1
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out
+	border: 1px solid black
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25)
+
+// Седьмая секция
+.seventh-section
+	min-height: 750px
+	transition: transform 1.5s, opacity 1.5s; 
+	&__qr-box
+		display: flex
+		justify-content: center
+	&__title
+		text-align: center
+		padding-top: 50px
+		margin-bottom: 50px
